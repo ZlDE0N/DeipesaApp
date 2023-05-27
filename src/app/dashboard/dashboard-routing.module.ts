@@ -10,9 +10,9 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 const routes: Routes = [
   {
     path: '',
-    component:LayoutComponent,
+    component:HomePageComponent,
     children:[
-      {path: 'home-page', component: HomePageComponent},
+      {path: 'layout-page', component: LayoutComponent},
       {path: 'store', component: LayoutPageComponent },
     ]
   },
