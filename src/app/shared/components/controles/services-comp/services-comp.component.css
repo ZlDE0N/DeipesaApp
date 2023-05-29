@@ -1,0 +1,6 @@
+.services .card-body {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.services .card-body i {
+    font-size: 50px;
+}

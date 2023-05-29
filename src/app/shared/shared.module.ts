@@ -3,6 +3,11 @@ import { CommonModule } from '@angular/common';
 import { Error404PageComponent } from './error404-page/error404-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SliderHomeComponent } from './components/controles/slider-home/slider-home.component';
+import { PrimaryBlockComponent } from './components/controles/primary-block/primary-block.component';
+import { ServicesCompComponent } from './components/controles/services-comp/services-comp.component';
+import { PortfolioCompComponent } from './components/controles/portfolio-comp/portfolio-comp.component';
+import { ContactHomeCompComponent } from './components/controles/contact-home-comp/contact-home-comp.component';
 
 
 
@@ -10,7 +15,12 @@ import { HeaderComponent } from './components/header/header.component';
   declarations: [
     Error404PageComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    SliderHomeComponent,
+    PrimaryBlockComponent,
+    ServicesCompComponent,
+    PortfolioCompComponent,
+    ContactHomeCompComponent,
   ],
   imports: [
     CommonModule
@@ -20,6 +30,11 @@ import { HeaderComponent } from './components/header/header.component';
     Error404PageComponent,
     FooterComponent,
     HeaderComponent,
+    SliderHomeComponent,
+    PrimaryBlockComponent,
+    ServicesCompComponent,
+    PortfolioCompComponent,
+    ContactHomeCompComponent,
   ]
 })
 export class SharedModule { }

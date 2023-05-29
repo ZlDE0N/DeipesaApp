@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color-primary: #25419e;
+    --secondary-color: #1e1e1e;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background: #f3f3f3;
+}
