@@ -11,6 +11,7 @@
 .carousel-item {
     height: 80vh;
     min-height: 300px;
+    transition: transform 0.6s ease-in-out;
 }
 
 .carousel-caption {
@@ -41,6 +42,21 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
+
+/* .carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+opacity: 0;
+transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next.carousel-item-left,
+.carousel-inner .carousel-item-prev.carousel-item-right {
+opacity: 1;
+} */
+
 
 
 
