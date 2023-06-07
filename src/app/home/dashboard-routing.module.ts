@@ -11,11 +11,20 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
 const routes: Routes = [
   {
     path: '',
-    component:HomePageComponent,
-    children:[
-      {path: 'dashboard', component: DashboardPageComponent},
-      {path: 'layout-page', component: LayoutComponent},
-      {path: 'store', component: LayoutPageComponent },
+    component: HomePageComponent,
+    children: [
+      {
+        path: 'dashboard',
+        component: DashboardPageComponent
+      },
+      {
+        path: 'layout-page',
+        component: LayoutComponent
+      },
+      {
+        path: 'store',
+        component: LayoutPageComponent
+      },
     ]
   },
 ];

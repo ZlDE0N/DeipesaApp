@@ -1,0 +1,27 @@
+.sidebar {
+    width: 280px;
+    height: 100%;
+}
+
+.side-navbar {
+    /* background: #171d29; */
+    background: gray;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 64px;
+    padding: 0 1.5rem;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.side-navbar img {
+    width: 3rem;
+}
+
+.nav-title {
+    color: black;
+    padding-left: 1rem;
+    font: 500;
+}
