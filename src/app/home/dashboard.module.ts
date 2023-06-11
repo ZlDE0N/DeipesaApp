@@ -12,7 +12,8 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     DashboardPageComponent,
     LayoutPageComponent,
-    HomePageComponent
+    HomePageComponent,
+   
   ],
   imports: [
     CommonModule,

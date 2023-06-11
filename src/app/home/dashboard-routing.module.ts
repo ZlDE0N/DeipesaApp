@@ -14,19 +14,26 @@ const routes: Routes = [
     component: HomePageComponent,
     children: [
       {
-        path: 'dashboard',
-        component: DashboardPageComponent
-      },
-      {
         path: 'layout-page',
         component: LayoutComponent
       },
       {
         path: 'store',
         component: LayoutPageComponent
-      },
+      }
     ]
   },
+
+  {
+    path: 'dashboard',
+    component: DashboardPageComponent,
+    children: [
+      {
+        path: 'dashboard-page',
+        component: DashboardPageComponent
+      }
+    ],
+  }
 ];
 
 @NgModule({
