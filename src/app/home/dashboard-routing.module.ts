@@ -11,29 +11,12 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
 const routes: Routes = [
   {
     path: '',
-    component: HomePageComponent,
-    children: [
-      {
-        path: 'layout-page',
-        component: LayoutComponent
-      },
-      {
-        path: 'store',
-        component: LayoutPageComponent
-      }
-    ]
-  },
-
-  {
-    path: 'dashboard',
     component: DashboardPageComponent,
     children: [
-      {
-        path: 'dashboard-page',
-        component: DashboardPageComponent
-      }
-    ],
-  }
+      {path: 'layout-page', component: LayoutComponent},
+      {path: 'dashboard', component: DashboardPageComponent},
+    ]
+  },
 ];
 
 @NgModule({
