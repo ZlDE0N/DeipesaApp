@@ -9,6 +9,8 @@ import { ServicesCompComponent } from './components/controles/services-comp/serv
 import { PortfolioCompComponent } from './components/controles/portfolio-comp/portfolio-comp.component';
 import { ContactHomeCompComponent } from './components/controles/contact-home-comp/contact-home-comp.component';
 import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { DashboardHeaderComponent } from './components/dashboard-header/dashboard-header.component';
 
 
 
@@ -23,6 +25,8 @@ import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
     PortfolioCompComponent,
     ContactHomeCompComponent,
     SliderbarComponent,
+    SidebarComponent,
+    DashboardHeaderComponent,
   ],
   imports: [
     CommonModule
@@ -38,6 +42,8 @@ import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
     PortfolioCompComponent,
     ContactHomeCompComponent,
     SliderbarComponent,
+    SidebarComponent,
+    DashboardHeaderComponent,
   ]
 })
 export class SharedModule { }

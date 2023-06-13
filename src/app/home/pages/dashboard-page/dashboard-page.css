@@ -1,13 +1,1 @@
-/* Clases para eliminar ocultar header y footer del dashboard-page */
-::ng-deep .navbar {
-    display: none;
-}
 
-::ng-deep footer {
-    display: none;
-}
-
-::ng-deep .app-top-filler {
-    display: none;
-}
-/* CSS Dashboard */
