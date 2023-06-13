@@ -4,12 +4,13 @@ import { Error404PageComponent } from './shared/error404-page/error404-page.comp
 
 //Rutas padres
 const routes: Routes = [
+
   {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then (m => m.AuthModule ), 
   },
   {
-    path: 'home',
+    path: 'dashboard',
     loadChildren: () => import('./home/dashboard.module').then (m => m.DashboardModule ), 
   },
   {
@@ -18,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {

@@ -1,54 +1,52 @@
-<!-- SIDEBAR -->
-<section id="sidebar" [ngClass]="status ? 'hide' : ''">
-    <a href="#" class="brand">
-        <i class='bx bxs-smile'></i>
-        <span class="text">AdminHub</span>
-    </a>
-    <ul class="side-menu top">
-        <li class="active">
-            <a href="#">
-                <i class='bx bxs-dashboard'></i>
-                <span class="text">Dashboard</span>
+<aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item"> <a class="nav-link " routerLink="/dashboard"> <i class="bi bi-grid"></i>
+                <span>Dashboard</span> </a></li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"> <i
+                    class="bi bi-menu-button-wide"></i><span>Sucursal 1</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
+            <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li> <a routerLink="/alerts"> <i class="bi bi-circle"></i><span>Alerts</span> </a></li>
+                <li> <a routerLink="/accordion"> <i class="bi bi-circle"></i><span>Accordion</span> </a></li>
+            </ul>
         </li>
-        <li>
-            <a href="#">
-                <i class='bx bxs-shopping-bag-alt'></i>
-                <span class="text">My Store</span>
-            </a>
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#"> <i
+                    class="bi bi-menu-button-wide"></i><span>Sucursal 2</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+            <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li> <a routerLink="/form-elements"> <i class="bi bi-circle"></i><span>Form Elements</span> </a></li>
+                <li> <a routerLink="/form-layouts"> <i class="bi bi-circle"></i><span>Form Layouts</span> </a></li>
+                <li> <a routerLink="/form-editors"> <i class="bi bi-circle"></i><span>Form Editors</span> </a></li>
+            </ul>
         </li>
-        <li>
-            <a href="#">
-                <i class='bx bxs-doughnut-chart'></i>
-                <span class="text">Analytics</span>
-            </a>
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#"> <i
+                    class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i
+                    class="bi bi-chevron-down ms-auto"></i> </a>
+            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li> <a routerLink="/tables-general"> <i class="bi bi-circle"></i><span>General Tables</span> </a></li>
+                <li> <a routerLink="/tables-data"> <i class="bi bi-circle"></i><span>Data Tables</span> </a></li>
+            </ul>
         </li>
-        <li>
-            <a href="#">
-                <i class='bx bxs-message-dots'></i>
-                <span class="text">Message</span>
-            </a>
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#"> <i
+                    class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+            <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li> <a routerLink="/charts-chartjs"> <i class="bi bi-circle"></i><span>Chart.js</span> </a></li>
+                <li> <a routerLink="/charts-apexcharts"> <i class="bi bi-circle"></i><span>ApexCharts</span> </a></li>
+            </ul>
         </li>
-        <li>
-            <a href="#">
-                <i class='bx bxs-group'></i>
-                <span class="text">Team</span>
-            </a>
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#"> <i
+                    class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+            <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li> <a routerLink="/icons-bootstrap"> <i class="bi bi-circle"></i><span>Bootstrap Icons</span> </a>
+                </li>
+                <li> <a routerLink="/icons-remix"> <i class="bi bi-circle"></i><span>Remix Icons</span> </a></li>
+                <li> <a routerLink="/icons-boxicons"> <i class="bi bi-circle"></i><span>Boxicons</span> </a></li>
+            </ul>
         </li>
+
     </ul>
-    <ul class="side-menu">
-        <li>
-            <a href="#">
-                <i class='bx bxs-cog'></i>
-                <span class="text">Settings</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="logout">
-                <i class='bx bxs-log-out-circle'></i>
-                <span class="text">Logout</span>
-            </a>
-        </li>
-    </ul>
-</section>
-<!-- SIDEBAR -->
+</aside>

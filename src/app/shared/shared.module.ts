@@ -9,6 +9,7 @@ import { ServicesCompComponent } from './components/controles/services-comp/serv
 import { PortfolioCompComponent } from './components/controles/portfolio-comp/portfolio-comp.component';
 import { ContactHomeCompComponent } from './components/controles/contact-home-comp/contact-home-comp.component';
 import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
+import { HeaderDashboardComponent } from './components/header-dashboard/header-dashboard.component';
 
 
 
@@ -23,6 +24,7 @@ import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
     PortfolioCompComponent,
     ContactHomeCompComponent,
     SliderbarComponent,
+    HeaderDashboardComponent,
   ],
   imports: [
     CommonModule
@@ -32,6 +34,7 @@ import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
     Error404PageComponent,
     FooterComponent,
     HeaderComponent,
+    HeaderDashboardComponent,
     SliderHomeComponent,
     PrimaryBlockComponent,
     ServicesCompComponent,

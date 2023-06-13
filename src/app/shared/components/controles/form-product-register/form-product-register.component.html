@@ -1,0 +1,69 @@
+<h1>Register</h1>
+<!-- <form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+    <div class="mb-4">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required formControlName="name">
+        <div *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.errors?.['required']"
+            class="alert alert-danger">This field is required.</div>
+        <div *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.errors?.['minlength']"
+            class="alert alert-danger">Name must be longer than
+            {{ registerForm.get('name')?.errors?.['minlength']?.requiredLength}} characters.</div>
+    </div>
+    <div class="mb-4 form-check">
+        <label for="checkAdult" class="form-label">Check</label>
+        <input type="checkbox" class="form-check-input" id="checkAdult" name="checkAdult" formControlName="checkAdult"
+            required>
+        <div *ngIf="registerForm.get('checkAdult')?.touched && registerForm.get('checkAdult')?.errors?.['required']"
+            class="alert alert-danger">This field is required.</div>
+    </div>
+    <div class="mb-4">
+        <label for="department" class="form-label">Department</label>
+        <select name="department" id="department" class="form-select form-select-sm" formControlName="department">
+            <option selected>Open this select menu</option>
+            <option value="marketing">Marketing</option>
+            <option value="sales">Sales</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div class="mb-4">
+        <label for="comment" class="form-label">Comment</label>
+        <textarea class="form-control" name="comment" id="comment" rows="4" placeholder="Leave a comment......"
+            formControlName="comment" required></textarea>
+        <div *ngIf="registerForm.get('comment')?.touched && registerForm.get('comment')?.errors?.['required']"
+            class="alert alert-danger">This field is required.</div>
+        <div class="d-grid gap-2 col-4 float-end">
+            <button type="submit" class="btn btn-info btn-lg" [disabled]="registerForm.invalid">Send</button>
+        </div>
+    </div>
+</form> -->
+
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+</form>     

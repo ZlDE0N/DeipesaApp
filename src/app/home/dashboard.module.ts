@@ -6,6 +6,7 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { ContentDashboardPageComponent } from './pages/content-dashboard-page/content-dashboard-page.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { SharedModule } from '../shared/shared.module';
     DashboardPageComponent,
     LayoutPageComponent,
     HomePageComponent,
+    ContentDashboardPageComponent,
    
   ],
   imports: [
