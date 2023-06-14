@@ -1,0 +1,7 @@
+{
+  "context": [
+    "/api"
+  ],
+  "target": "https://localhost:7269",
+  "secure": false
+}
