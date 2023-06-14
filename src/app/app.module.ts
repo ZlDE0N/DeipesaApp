@@ -5,10 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './shared/modules/angular-material.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule, SharedModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    SharedModule,
+    BrowserAnimationsModule,
+    AngularMaterialModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

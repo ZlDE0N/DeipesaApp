@@ -11,8 +11,7 @@ import { ContactHomeCompComponent } from './components/controles/contact-home-co
 import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardHeaderComponent } from './components/dashboard-header/dashboard-header.component';
-
-
+import { MaterialesTableComponent } from './components/controles/materiales-table/materiales-table.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +26,10 @@ import { DashboardHeaderComponent } from './components/dashboard-header/dashboar
     SliderbarComponent,
     SidebarComponent,
     DashboardHeaderComponent,
+    MaterialesTableComponent,
   ],
-  imports: [
-    CommonModule
-
-  ],
-  exports:[
+  imports: [CommonModule],
+  exports: [
     Error404PageComponent,
     FooterComponent,
     HeaderComponent,
@@ -44,6 +41,7 @@ import { DashboardHeaderComponent } from './components/dashboard-header/dashboar
     SliderbarComponent,
     SidebarComponent,
     DashboardHeaderComponent,
-  ]
+    MaterialesTableComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
