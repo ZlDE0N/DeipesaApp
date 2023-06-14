@@ -16,15 +16,15 @@ export abstract class BaseCrudService<
   }
 
   getById(id: IdType): Observable<Model> {
-    return this.http.get<Model>(`${this.resourceUrl}/${id}`);
+    return this.http.get<Model>(`${this.resourceUrl}${id}`);
   }
 
   delete(id: IdType): Observable<any> {
-    return this.http.delete(`${this.resourceUrl}/${id}`);
+    return this.http.delete(`${this.resourceUrl}${id}`);
   }
 
   update(model: UpdateDto, id: IdType): Observable<any> {
-    return this.http.put(`${this.resourceUrl}/${id}`, model);
+    return this.http.put(`${this.resourceUrl}${id}`, model);
   }
 
   create(model: CreateDto): Observable<any> {

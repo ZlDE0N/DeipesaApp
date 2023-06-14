@@ -1,0 +1,93 @@
+<div mat-dialog-content *ngIf="isBusy">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div [hidden]="isBusy">
+  <h1 mat-dialog-title>{{ title }}</h1>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div mat-dialog-content class="fields">
+      <mat-form-field>
+        <mat-label>Id</mat-label>
+        <input matInput type="text" formControlName="idMaterial" />
+        <mat-error
+          *ngFor="let error of getErrors(form.get('idMaterial')!, 'Id')"
+        >
+          {{ error }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text" formControlName="nombreMaterial" />
+        <mat-error
+          *ngFor="let error of getErrors(form.get('nombreMaterial')!, 'Nombre')"
+        >
+          {{ error }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Unidad De Medida</mat-label>
+        <input matInput type="text" formControlName="unidadDeMedida" />
+        <mat-error
+          *ngFor="
+            let error of getErrors(
+              form.get('unidadDeMedida')!,
+              'Unidad De Medida'
+            )
+          "
+        >
+          {{ error }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Descripción</mat-label>
+        <input matInput type="text" formControlName="descripcion" />
+        <mat-error
+          *ngFor="
+            let error of getErrors(form.get('descripcion')!, 'Descripción')
+          "
+        >
+          {{ error }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Marca</mat-label>
+        <input matInput type="text" formControlName="marca" />
+        <mat-error *ngFor="let error of getErrors(form.get('marca')!, 'Marca')">
+          {{ error }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>PVU</mat-label>
+        <input matInput type="text" formControlName="pvu" />
+        <mat-error *ngFor="let error of getErrors(form.get('pvu')!, 'PVU')">
+          {{ error }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div mat-dialog-actions align="end">
+      <button
+        mat-dialog-close
+        mat-button
+        color="warn"
+        [disabled]="isBusy"
+        type="button"
+      >
+        <mat-icon>cancel</mat-icon> Cancelar
+      </button>
+      <button
+        mat-flat-button
+        color="primary"
+        [disabled]="isBusy || form.invalid"
+        type="submit"
+      >
+        <mat-icon>save</mat-icon> Guardar
+      </button>
+    </div>
+  </form>
+</div>

@@ -2,7 +2,7 @@ import { Observable } from 'rxjs';
 
 export interface CrudService<
   Model,
-  IdType = number,
+  IdType = string,
   CreateDto = Partial<Model>,
   UpdateDto = Partial<Model>
 > {

@@ -12,6 +12,9 @@ import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardHeaderComponent } from './components/dashboard-header/dashboard-header.component';
 import { MaterialesTableComponent } from './components/controles/materiales-table/materiales-table.component';
+import { AngularMaterialModule } from './modules/angular-material.module';
+import { MaterialEditDialogComponent } from './components/controles/materiales-table/material-edit-dialog/material-edit-dialog.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,8 +30,9 @@ import { MaterialesTableComponent } from './components/controles/materiales-tabl
     SidebarComponent,
     DashboardHeaderComponent,
     MaterialesTableComponent,
+    MaterialEditDialogComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, AngularMaterialModule, ReactiveFormsModule],
   exports: [
     Error404PageComponent,
     FooterComponent,
@@ -42,6 +46,8 @@ import { MaterialesTableComponent } from './components/controles/materiales-tabl
     SidebarComponent,
     DashboardHeaderComponent,
     MaterialesTableComponent,
+    AngularMaterialModule,
+    ReactiveFormsModule,
   ],
 })
 export class SharedModule {}
